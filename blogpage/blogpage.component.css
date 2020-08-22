@@ -1,0 +1,129 @@
+img {
+    opacity: 90%;
+}
+
+.owner {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 20px;
+    color: gold;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.createpost {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 20px;
+    color: lightblue;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+
+    cursor: pointer;
+}
+
+.createpost:hover {
+    color: yellow;;
+}
+
+.searchpost {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 20px;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+
+    cursor: pointer;
+}
+
+.searchpost:hover{
+    color: yellow;
+}
+
+.settings {
+    position: absolute;
+    top: 2rem;
+    right: 20rem;
+    cursor: pointer;
+    color: coral;
+}
+
+.centertext {
+    position: absolute;
+    top:8rem;
+    text-align: center;
+    left: 32rem;
+    word-spacing: 3px;
+}
+
+.centeredcontent{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+
+
+}
+
+
+.centeredcontent .card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 180px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px lightpink;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    object-fit: cover;
+}
+
+
+
+.centeredcontent .card .heading {
+    color: black;
+    height: 10px;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+
+.centeredcontent .card .heading:active {
+    color: red;
+}
+
+.centeredcontent .card .heading :hover {
+    text-decoration: underline;
+}
+
+.centeredcontent .card .category {
+    font-style: italic;
+    margin-bottom: 0.4rem;
+    opacity: 80%;
+    font-size: 16px;
+}
+
+.centeredcontent .card .content {
+    font-style: oblique;
+    word-wrap: break-word;
+    word-spacing: 0.6rem;
+    overflow-y:scroll;
+}
+
+.centeredcontent .card .footer {
+    font-style: italic;
+    opacity: 80%;
+    text-decoration: underline;
+    font-size: 16px;
+    justify-content: space-between;
+    
+}
+
+.centeredcontent .card .footer small {
+    margin-left: 2rem;
+}

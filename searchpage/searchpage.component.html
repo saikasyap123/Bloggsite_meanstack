@@ -1,0 +1,48 @@
+<mat-toolbar color="accent"class="navbar">
+    <div>KASYAPBLOGS</div>
+    <div routerLink='/blogs' style="cursor: pointer;">HOME</div>
+    </mat-toolbar>
+
+<div class="centeredtext">
+    <h3 class="mat-display-1">Search Here</h3>
+    
+</div>
+<mat-card>
+    <mat-card-content>
+    <form>
+        <mat-form-field appearance="outline">
+        <mat-label>Enter here</mat-label>
+        <input matInput #inputvalue>
+    </mat-form-field>
+</form>
+</mat-card-content>
+    <mat-card-actions>
+        <button (click)="onAuthor(inputvalue.value)">Search by Author</button>
+        <button (click)="onCategory(inputvalue.value)">Search by Category</button>
+    </mat-card-actions>
+    
+</mat-card>
+<div class="lengthline">
+    <small id="lengthline"></small>
+</div>
+
+<div class="centeredcontent">
+    <div class="card" *ngFor="let blog of blogs">
+        <div class="heading">
+            <h2>{{blog.title}}</h2>
+            
+        </div><mat-divider></mat-divider>
+        <div class="category" title="category">
+            <small>category : {{blog.category}}</small>
+        </div><mat-divider></mat-divider>
+        <div class="content">
+            <h4>{{blog.content}}</h4>
+        </div><mat-divider></mat-divider>
+        <div class="footer">
+            <small>Postedby:{{blog.user}}</small>
+            <small>DatePosted:{{blog.currentdate}}</small>
+            <small (click)="upvote(blog)">Upvote : {{blog.upvote}}</small>
+        </div>
+    </div>
+    
+</div>

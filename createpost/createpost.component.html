@@ -1,0 +1,36 @@
+<mat-toolbar class='navbar' color='primary'>
+    <div>
+        KASYAPBLOGS
+    </div>
+    <div>CreateHere</div>
+</mat-toolbar>
+
+<mat-card>
+    <mat-card-content>
+    <form [formGroup]='PostForm'>
+        <mat-form-field appearance='outline'>
+            <mat-label>Title</mat-label>
+            <input  matInput formControlName='title' class='form-control' required>
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Category</mat-label>
+            <input  matInput formControlName='category' class='form-control' required>
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Content</mat-label>
+            <input  matInput formControlName='content' class='form-control' required>
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Author or Penname</mat-label>
+            <input  matInput formControlName='user' class='form-control' required>
+        </mat-form-field>
+    </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-fab (click)="postBlog()">Post</button>
+        <button mat-fab routerLink='/blogs'>Home</button>
+    </mat-card-actions>
+</mat-card>
+<mat-toolbar class="footer">
+    <div>All Rights Reserved@2020</div>
+</mat-toolbar>

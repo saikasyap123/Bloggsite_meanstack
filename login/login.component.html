@@ -1,0 +1,39 @@
+<img src="https://teneweb.com/wp-content/uploads/2016/05/website-design-tenerife-diseno-web.jpg" width="100%" height="670px">
+
+<div class="owner" title="owner">
+    KASYAPBLOGS
+</div>
+
+<div class="register" title="login" routerLink='/register'>
+    Register
+</div>
+
+<div class="blogsite">
+    BLOGGSITE
+</div>
+
+<div class="welcome">
+    Welcome
+</div>
+
+<mat-card>
+    <mat-card-title>Login Here</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]='LoginForm'>
+            <mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput type="text" formControlName='username' class='FormControl' required>
+            </mat-form-field><mat-icon>account_circle</mat-icon>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName='email' class='FormControl' required>
+            </mat-form-field><mat-icon>email</mat-icon>
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="center">
+        <button mat-fab color='primary' (click)='Login()'>Login</button>
+    </mat-card-actions>
+    <mat-card-footer>
+        <small style="margin-left:2.5rem">Doesn't have an account! Please Register.</small>
+    </mat-card-footer>
+</mat-card>

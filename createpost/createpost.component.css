@@ -1,0 +1,25 @@
+mat-toolbar {
+    justify-content: space-between;
+}
+
+mat-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card button {
+    margin-left: 5rem;
+}
+
+mat-card-actions {
+    margin-left: 30rem;
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

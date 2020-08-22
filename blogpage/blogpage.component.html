@@ -1,0 +1,47 @@
+<img src="https://aerialservicesinc.com/wp-content/uploads/2018/01/Travel-Blog.jpg" height="50%" width="100%">
+
+<div class="owner">
+    <h3 title="owner" routerLink='/register'>kasyapblogs</h3>
+</div>
+<div class="createpost">
+    <h3 title="create post" (click)="createpost()">Create Post</h3>
+</div>
+<div class="searchpost">
+    <h3 title="search" (click)="searchpost()">Search Post</h3>
+</div>
+
+<mat-menu #setmenu="matMenu">
+    <button    mat-menu-item>Delete Blog</button>
+</mat-menu>
+
+<div class="settings">
+    <mat-icon title="blog settings" [matMenuTriggerFor]='setmenu'>settings</mat-icon>
+</div>
+
+
+<div class="centertext">
+    <h1 style="color: whitesmoke;
+    font-size: 40px; font-weight: 19px;">Bloggsite</h1>
+    <h3 style="color:brown;font-size: 22px;">Blogging is Good For Your Career</h3>
+</div>
+
+<div class="centeredcontent">
+    <div class="card" *ngFor="let blog of blogs">
+        <div  class="heading">
+            <h2 >{{blog.title}}</h2>
+        </div><mat-divider></mat-divider>
+        <div class="category" title="category">
+            <small>category : {{blog.category}}</small>
+        </div><mat-divider></mat-divider>
+        <div class="content">
+            <h4>{{blog.content}}</h4>
+        </div><mat-divider></mat-divider>
+        <div class="footer">
+            <small>Postedby:{{blog.user}}</small>
+            <small>DatePosted:{{blog.currentdate}}</small>
+            <small (click)="upvote(blog)">Upvote : {{blog.upvote}}</small>
+        </div>
+    </div>
+    
+</div>
+

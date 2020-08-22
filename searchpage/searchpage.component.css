@@ -1,0 +1,84 @@
+.centeredtext {
+    
+    text-align: center;
+}
+
+mat-card {
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    top: 9rem;
+    left: 32rem;
+}
+mat-card button {
+    border-radius: 7px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.lengthline {
+    position: absolute;
+    top:21rem ;
+    left: 30rem;
+}
+.centeredcontent {
+    position: absolute;
+    top: 23rem;
+    left: 28rem;
+}
+
+.centeredcontent .card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 180px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px lightpink;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    object-fit: cover;
+}
+
+.centeredcontent .card .heading {
+    color: black;
+    height: 10px;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+
+.centeredcontent .card .heading :hover {
+    text-decoration: underline;
+
+}
+
+.centeredcontent .card .category {
+    font-style: italic;
+    margin-bottom: 0.4rem;
+    opacity: 80%;
+    font-size: 16px;
+}
+
+.centeredcontent .card .content {
+    font-style: oblique;
+    word-wrap: break-word;
+    word-spacing: 0.6rem;
+    overflow-y:scroll;
+}
+
+.centeredcontent .card .footer {
+    font-style: italic;
+    opacity: 80%;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+

@@ -1,0 +1,44 @@
+img {
+    opacity: 86%;
+}
+
+.owner {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 25px;
+    color: white;
+}
+
+.owner:hover {
+    color: yellow;
+}
+
+.login {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-size: 25px;
+    color: wheat;
+}
+.login:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.blogsite {
+    position: absolute;
+    top: 4rem;
+    left: 45%;
+    font-size: 28px;
+    color: whitesmoke;
+    
+}
+
+mat-card {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 9rem;
+    left: 40%;
+}
